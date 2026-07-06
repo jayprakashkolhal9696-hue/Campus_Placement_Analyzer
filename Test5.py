@@ -1,0 +1,8 @@
+import pandas as pd
+
+res = pd.read_excel("Campus_Placement.xlsx")
+print(res)
+
+
+duplicates = res[res.duplicated()]
+print(duplicates)
